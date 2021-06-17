@@ -3,6 +3,11 @@
 /*
   Create a function named addTwo which accepts a number, adds 2 to the number and return the new value.
 */
+function addTwo(num){
+  let num = 0
+  for(let Number of numbers);
+  if(i = 0, i % 2 < num.length, i++ )
+}
 
 /*
   Create a function named addThree which accepts a number, adds 3 to the number and return the new value.
