@@ -134,13 +134,26 @@ sentence.includes("Y",5) // false
 - Example:
 ```js
 let name = "A quick brown fox jumped over a lazy dog"
-name.("dog"); // true
+name.indexOf("dog"); // 37
 let houseName = 'Shastri is a student'
-houseName.includes("is",2) // true
+houseName.indexOf("is",2) // 8
 let sentence = 'A BOY'
-sentence.includes("Y",5) // false
+sentence.indexOf("Y",5) // -1
 ```
+
+
 11. `lastIndexOf`
+- Parameter: (searchValue)The string value to search for.("String" data type)
+- Return: The index of the first occurrence of search value,or -1 if not found(string data type)
+- Example:
+```js
+let name = "A quick brown fox jumped over a lazy dog"
+name.indexOf("dog"); // 37
+let houseName = 'Shastri is a student'
+houseName.indexOf("is",2) // 8
+let sentence = 'A BOY'
+sentence.indexOf("Y",5) // -1
+```
 12. `padEnd`
 13. `padStart`
 14. `repeat`
