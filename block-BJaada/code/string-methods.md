@@ -143,18 +143,29 @@ sentence.indexOf("Y",5) // -1
 
 
 11. `lastIndexOf`
-- Parameter: (searchValue)The string value to search for.("String" data type)
-- Return: The index of the first occurrence of search value,or -1 if not found(string data type)
+- Parameter: (searchValue)The string repersenting the value to search for.if searchValue is an empty string,then formIndex is returned("String" data type)
+- Return: The index of the last occurrence of search value,or -1 if not found(string data type)
 - Example:
 ```js
 let name = "A quick brown fox jumped over a lazy dog"
-name.indexOf("dog"); // 37
+name.lastIndexOf("dog"); // 37
 let houseName = 'Shastri is a student'
-houseName.indexOf("is",2) // 8
+houseName.lastIndexOf("is",2) // -1
 let sentence = 'A BOY'
-sentence.indexOf("Y",5) // -1
+sentence.lastIndexOf("Y",5) // 4
 ```
 12. `padEnd`
+- Parameter: (targetLength)The length of the resulting once the current string has been padded.if the value is lower than str.length,the current  ("String" data type)
+- Return: The index of the last occurrence of search value,or -1 if not found(string data type)
+- Example:
+```js
+let name = "A quick brown fox jumped over a lazy dog"
+name.lastIndexOf("dog"); // 37
+let houseName = 'Shastri is a student'
+houseName.lastIndexOf("is",2) // -1
+let sentence = 'A BOY'
+sentence.lastIndexOf("Y",5) // 4
+```
 13. `padStart`
 14. `repeat`
 15. `replace`
