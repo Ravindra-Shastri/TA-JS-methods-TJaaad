@@ -24,22 +24,122 @@ Example:
      ```js
      let name = 'Arya Stark';
      name.charAt(2); //"y"
-     let sentance = 'A quick brown fox jumped over a lazy dog';
-     sentance(4); // "i"
+     let sentence = 'A quick brown fox jumped over a lazy dog';
+     sentence(4); // "i"
      let houseName = 'Starks';
      houseName.charAt(0); // "S"
      ```
    - `charAt` accepts a index (number data type) and return the character on that index in the string.
 
 2. `toUpperCase`
+- Parameter: Convert to UpperCase("string" data type)
+- Return: A new string converted to UpperCase(string data type)
+- Example:
+```js
+let name = 'John Snow'
+name.toUpperCase() // "JOHN SNOW"
+let houseName = 'Shastri'
+houseName.toUpperCase() // "SHASTRI"
+let sentence = 'John is a boy'
+sentence.toUpperCase() // "JOHN IS A BOY"
+```
 3. `toLowerCase`
+- Parameter: Convert to LowerCase("string" data type)
+- Return: A new string converted to LowerCase(string data type)
+- Example:
+```js
+let name = 'JOHN SNOW'
+name.toLowerCase() // "john snow"
+let houseName = 'SHASTRI'
+houseName.toLowerCase() // "shastri"
+let sentence = 'JOHN IS A BOY'
+sentence.toLowerCase() // "john is a boy"
+```
 4. `trim`
+- Parameter: Removes whitespace from both ends("string" data type)
+- Return: A new string stripped of whitespace(string data type)
+- Example:
+```js
+let name = "  John Snow  "
+name.trim() // "John Snow"
+let houseName = '  Shastri   '
+houseName.trim() // "Shastri"
+let sentence = '   JOHN IS A BOY  '
+sentence.trim() // "JOHN IS A BOY"
+```
+
 5. `trimEnd`
+- Parameter: Removes whitespace from end("string" data type)
+- Return: A new string stripped of whitespace(string data type)
+- Example:
+```js
+let name = "  John Snow  "
+name.trimEnd() // "  John Snow"
+let houseName = '  Shastri   '
+houseName.trimEnd() // "  Shastri"
+let sentence = '   JOHN IS A BOY  '
+sentence.trimEnd() // "  JOHN IS A BOY"
+```
 6. `trimStart`
+- Parameter: Removes whitespace from Start("string" data type)
+- Return: A new string stripped of whitespace(string data type)
+- Example:
+```js
+let name = "  John Snow  "
+name.trimStart() // "John Snow   "
+let houseName = '  Shastri   '
+houseName.trimStart() // "Shastri   "
+let sentence = '   JOHN IS A BOY  '
+sentence.trimStart() // "JOHN IS A BOY   "
+```
 7. `concat`
+- Parameter: Concatenates the string("string" data type)
+- Return: A new string containing the combined text of provided string (string data type)
+- Example:
+```js
+let name = "John"
+name.concat("a",name) // "JohnaJohn"
+let houseName = 'Shastri'
+houseName.concat("and",houseName) // "ShastriaShastri"
+let sentence = 'A BOY'
+sentence.concat("the",sentence) // "A BOYtheA BOY"
+```
 8. `endsWith`
+- Parameter: Determines whether a string ends with characters of a specified string("String" data type)
+- Return: true if the given characters are found at the end of the string otherwise false(Boolean data type)
+- Example:
+```js
+let name = "A quick brown fox jumped over a lazy dog"
+console.log(name.endsWith("dog",name.length)); // true
+let houseName = 'Shastri is a student'
+houseName.endsWith("t",houseName.length) // true
+let sentence = 'A BOY'
+sentence.endsWith("t",sentence.length) // false
+```
 9. `includes`
+- Parameter: A string to be search for within string("String" data type)
+- Return: true if the search string are found anywere within the string otherwise false(Boolean data type)
+- Example:
+```js
+let name = "A quick brown fox jumped over a lazy dog"
+name.includes("dog"); // true
+let houseName = 'Shastri is a student'
+houseName.includes("is",2) // true
+let sentence = 'A BOY'
+sentence.includes("Y",5) // false
+```
 10. `indexOf`
+- Parameter: (searchValue)The string value to search for.("String" data type)
+- Return: The index of the first occurrence of search value,or -1 if not found(string data type)
+- Example:
+```js
+let name = "A quick brown fox jumped over a lazy dog"
+name.("dog"); // true
+let houseName = 'Shastri is a student'
+houseName.includes("is",2) // true
+let sentence = 'A BOY'
+sentence.includes("Y",5) // false
+```
 11. `lastIndexOf`
 12. `padEnd`
 13. `padStart`
