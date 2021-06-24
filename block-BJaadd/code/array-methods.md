@@ -35,35 +35,34 @@ Example:
 
 2. `join`
 
-- Parameter: n (any) number of values (number, string, boolean, array, null, undefined, object and function etc)
-   - Return: a single Array consisting of by all the values passed as parameters in the same order.
+- Parameter: separator(Optional) join() methods creates and returs a new string by concatenating all of the elements in an array.
+   - Return: A string with all aray elements joined.if arr.length is 0 then return empty string.
    - Example:
      ```js
      let numbers = [1, 2, 3];
-     numbers.concat(4); //[1,2,3,4]
-     let sentanceArray = 'A quick brown fox jumped over a lazy'.split(' ');
-     sentanceArray.concat('dog').join(' '); //"A quick brown fox jumped over a lazy dog"
+     numbers.join(); //"1,2,3"
+     let sentanceArray = ['A quick brown fox jumped over a lazy dog'];
+     sentanceArray.join(); //"A quick brown fox jumped over a lazy dog"
      let colors = ['red', 'green', 'blue'];
-     colors.concat('black', 'red', 21, true); // ['red','green','blue','black', 'red', 21, true]
+     colors.join(); // "red,green,blue"
      ```
-   - `join` accepts n number of values and returns one array with all the values in same order. It does not change the original array.
-   - No it does not mutate the original array
+   - `join`method creates and returs a new string by concatenating all of the elements in an array.
+
 
 3. `flat`
 
-- Parameter: n (any) number of values (number, string, boolean, array, null, undefined, object and function etc)
-   - Return: a single Array consisting of by all the values passed as parameters in the same order.
+- Parameter: (depth)flat specifies the depth level,means how deep a nested array structure should be flattened. 1 is Default. 
+   - Return: A new arrey with concatinated elements of sub-arrays.
    - Example:
      ```js
-     let numbers = [1, 2, 3];
-     numbers.concat(4); //[1,2,3,4]
-     let sentanceArray = 'A quick brown fox jumped over a lazy'.split(' ');
-     sentanceArray.concat('dog').join(' '); //"A quick brown fox jumped over a lazy dog"
+     let numbers = [1, [2, 3,[4,5,[6,7,[8,9]]]]];
+     numbers.flat(4); //(9)[1,2,3,4,5,6,7,8,9]
+     let sentanceArray = [A quick brown [fox jumped over a lazy]].
+     sentanceArray.flat(2); //["A quick brown fox jumped over a lazy dog"]
      let colors = ['red', 'green', 'blue'];
-     colors.concat('black', 'red', 21, true); // ['red','green','blue','black', 'red', 21, true]
+     colors.flat(); // ["red","green","blue"]
      ```
-   - `flat` accepts n number of values and returns one array with all the values in same order. It does not change the original array.
-   - No it does not mutate the original array
+   - `flat` specifies the depth level,means how deep a nested array structure should be flattened. 1 is Default. 
 
 4. `push`
 - Parameter: n (any) number of values (number, string, boolean, array, null, undefined, object and function etc)
