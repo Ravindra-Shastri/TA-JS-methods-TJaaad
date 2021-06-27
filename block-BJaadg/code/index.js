@@ -38,7 +38,7 @@ let to = 'Arya Stark';
 /*
 7. Does quote includes the word "Only"
 */
-
+quote.includes("Only");
 /*
 8. Does quote includes the word " we"
 */
@@ -84,11 +84,11 @@ Store the output in a new variable
 /*
 18. Replace today to tomorrow in quote.
 */
-
+quote.replace('today','tomorrow')
 /*
 19. Replace Stark to Lannister in quoteTo
 */
-
+quote.replace('Stark','Lannister');
 /*
 20. Make the quote of length 30 and put ... at the end. (use slice)
 */
