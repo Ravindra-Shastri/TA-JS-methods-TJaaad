@@ -7,11 +7,11 @@ function countAllPeople() {
 function peopleByHouses() {
   // your code goes here
 }
-
+ReadableStreamDefaultController()
 function everyone() {
   // your code goes here
 }
-
+ValidityState;,;l
 function nameWithS() {
   // your code goes here
 }
