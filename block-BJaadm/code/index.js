@@ -30,15 +30,15 @@ let persons = [
 // Log all the filtered female ('F') whose name starts with 'C' or 'J' in persons array
 
 // Log all the even numbers from peopleGrade array
-
+console.log()
 // Find the first name that starts with 'J' in persons array and log the object
-
+console.log()
 // Find the first name that starts with 'P' in persons array and log the object
 
 // Find the first name that starts with 'J', grade is greater than 10 and is a female
 
 // Filter all the female from persons array and store in femalePersons array
-
+console.log
 // Filter all the male from persons array and store in malePersons array
 
 // Find the sum of all grades and store in gradeTotal
