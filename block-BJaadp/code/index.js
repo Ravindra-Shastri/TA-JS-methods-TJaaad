@@ -16,11 +16,12 @@ let persons = [
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
-console.log
+let allgrade = persons.grade.reduce((acc,person.grade)=>{
+  return sum of grade / length of grade
+}
 // Find the average grade of male
 
 // Find the average grade of female
-console.log
 // Find the highest grade
 
 // Find the highest grade in male
