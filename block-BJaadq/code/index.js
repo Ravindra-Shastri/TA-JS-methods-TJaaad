@@ -2,6 +2,7 @@
 
 function countAllPeople() {
   // your code goes here
+  for(let i = 0;i < peopleByHouses.length;i++)
 }
 
 function peopleByHouses() {
