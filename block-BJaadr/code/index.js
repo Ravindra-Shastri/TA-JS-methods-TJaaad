@@ -3,7 +3,7 @@
 function countAllPeople() {
   // your code goes here
 }
-
+flvmkm
 function peopleByHouses() {
   // your code goes here
 }
